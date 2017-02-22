@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$font: 'Montserrat';
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+}
+.body-image {
+  background-image: url('https://www.nuvi.com/images/globe_night-bfb901bd.jpg');
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.logo {
+  height: 21px;
+  padding: 9px 0 0 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav {
+  color: white;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 346px;
+  float: right;
+  font-family: "Montserrat", monospace;
+  transition: .2s;
+  cursor: pointer;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  padding-top: 8px;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  a {
+    text-decoration: none;
+    color: #fff;
+    background-repeat: no-repeat;
+  }
+}
+.nav2:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+  text-decoration: none;
+}
+.nav2:hover:after {
+  width: 100%;
+  background: white;
+  text-decoration: none;
+}
+.bar-wrap {
+  padding-top: 47vh;
+  padding-left: 50px;
+  .bar {
+      width: 400px;
+      height: 68px;
+      background-color: #4d585e;
+      // background-color: #323337;
+      margin-top: 20px;
+      a {
+        text-decoration: none;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        font-family: $font, monospace;
+        color: white;
+        transition: .2s;
+        cursor: pointer;
+        &:hover {
+          color: #53c6dd;
+        }
+      }
+  }
+}

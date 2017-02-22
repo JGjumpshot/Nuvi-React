@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$font: 'Montserrat';
+$text-color: #d5dfe0;
+
+.modal-wrapper {
+  width: 60%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  .usernames {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Montserrat", monospace;
+    color: $text-color;
+    padding-left:  153px;
+    font-size: 25px;
+    .names {
+      width: 70%;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .text-names {
+        transition: .5s;
+        &:hover {
+          color: grey;
+          cursor: pointer;
+          a {
+            color: grey;
+            text-decoration: none;
+          }
+        }
+        a {
+          color: $text-color;
+          text-decoration: none;
+        }
+      }
+      /*p {
+          padding-top: 23%;
+      }*/
+      .img {
+        width: 140px;
+        border-radius: 150px;
+      }
+      .provider {
+        padding-left: 25px;
+        text-transform: capitalize;
+        padding-top: 23%;
+
+      }
+    }
+  }
+  .input {
+    display: flex;
+    justify-content: center;
+    font-family: $font, monospace;
+    color: $text-color;
+    input {
+      margin-left: 5px;
+    }
+  }
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(83,198,221,.5);
+    background-color: rgba(83,198,221,.7);
+}
