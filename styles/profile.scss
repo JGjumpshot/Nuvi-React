@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$font: 'Montserrat';
+$text-color: #d5dfe0;
+
+.profile-wrapper {
+  background-color: white;
+  width: 500px;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  transform: translate(33vw);
+}

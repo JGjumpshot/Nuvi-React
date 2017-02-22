@@ -26,7 +26,7 @@ componentDidMount() {
 renderUsers(){
   return this.state.users.map((val, i) =>{
     return (
-        <li className="names" key={i} value={val.id}><p className="text-names"><Link to="/users/profile">{val.actor_name}</Link></p><img className="img" src={val.actor_avator}/><p className="provider">{val.provider}</p></li>
+        <li className="names" key={i} value={val.id}><p className="text-names"><Link to={"/users/profile/" + val.id}>{val.actor_name}</Link></p><img className="img" src={val.actor_avator}/><p className="provider">{val.provider}</p></li>
     );
   })
 }
