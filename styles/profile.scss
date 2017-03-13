@@ -10,4 +10,26 @@ $text-color: #d5dfe0;
   left: 0;
   right: 0;
   transform: translate(33vw);
+  .profile-container {
+    display: flex;
+    align-items: center;
+    .profile-image {
+      width: 140px;
+    }
+    .actor-text {
+      display: flex;
+      justify-content: space-between;
+      width: 290px;
+      padding-bottom: 45px;
+      padding-left: 15px;
+      font-family: $font, monospace;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+  }
+  .status {
+    display: flex;
+    justify-content: space-around;
+    font-family: $font, monospace;
+  }
 }

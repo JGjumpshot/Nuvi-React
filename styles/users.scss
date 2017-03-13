@@ -59,6 +59,9 @@ $text-color: #d5dfe0;
     justify-content: center;
     font-family: $font, monospace;
     color: $text-color;
+    position: fixed;
+    padding-top: 5px;
+    padding-left: 3px;
     input {
       margin-left: 5px;
     }

@@ -4,18 +4,17 @@ require('../../styles/users.scss');
 class Input extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      value: ''
-    }
   }
 
-  handleChange(e) {
-    this.setState({value: e.target.value});
+  filterUpdate() {
+    const val = this.myValue.value;
+    this.props.filterUpdate(val)
   }
+
   render() {
     return(
       <div className="input">
-        <p>Name:</p><input type="text" value={this.state.value} placeholder="Search" onChange={this.handleChange}/>
+        <p>Name:</p><input type="text" ref={ (value) => this.myValue = value} placeholder="Search" onChange={this.filterUpdate.bind(this)}/>
       </div>
     );
   }
